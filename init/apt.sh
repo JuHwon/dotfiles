@@ -31,6 +31,7 @@ function setdiff() {
 
 
 packages=(
+	zsh
 	curl
 	git
 	vim
