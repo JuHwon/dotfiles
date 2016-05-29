@@ -15,8 +15,8 @@ Install the dotfiles with either Git, curl or wget:
 
 Alternatively, you can install this into `~/.dotfiles` remotely without Git using curl:
 
-    sh -c "`curl -fsSL https://raw.github.com/juhwon/dotfiles/master/remote-install.sh`"
+    bash -c "`curl -fsSL https://raw.github.com/juhwon/dotfiles/master/remote-install.sh`"
 
 Or, using wget:
 
-    sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/juhwon/dotfiles/master/remote-install.sh`"
+    bash -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/juhwon/dotfiles/master/remote-install.sh`"
