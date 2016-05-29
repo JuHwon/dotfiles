@@ -1,0 +1,9 @@
+[user]
+	email = juer.wagner@gmail.com
+	name = JuHwon
+[push]
+	default = simple
+[color]
+	ui = true
+[core]
+	editor = vim
