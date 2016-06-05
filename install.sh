@@ -15,6 +15,12 @@ source ./init/apt.sh
 source ./install/npm.sh
 
 # git
-ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
+ln -sfv "$DOTFILES_DIR/config/.gitconfig" ~
+
+# vimrc
+ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
+
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 
