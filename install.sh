@@ -14,6 +14,8 @@ source ./init/apt.sh
 
 source ./install/npm.sh
 
+source ./fonts/install_fonts.sh
+
 # git
 ln -sfv "$DOTFILES_DIR/config/.gitconfig" ~
 
