@@ -8,4 +8,3 @@ e_header "Installing APT packages: ${packages[*]}"
 
 $withsudo apt-get -y -qq install $package $installrecommended
 
-
