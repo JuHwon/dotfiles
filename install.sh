@@ -10,9 +10,11 @@ function e_success()  { echo -e " \033[1;32m✔\033[0m  $@"; }
 function e_error()    { echo -e " \033[1;31m✖\033[0m  $@"; }
 function e_arrow()    { echo -e " \033[1;34m➜\033[0m  $@"; }
 
-source ./init/apt.sh
+if [[ -x 'command -v apt-get' ]]; then
+    source ./init/apt.sh
+fi
 
-source ./install/npm.sh
+# source ./install/npm.sh
 
 source ./fonts/install_fonts.sh
 
@@ -24,5 +26,4 @@ ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
 
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 

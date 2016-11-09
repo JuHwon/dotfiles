@@ -1,9 +1,16 @@
 [user]
-	email = juer.wagner@gmail.com
-	name = JuHwon
+  useConfigOnly = true
 [push]
-	default = simple
+  default = simple
 [color]
-	ui = true
+  ui = true
 [core]
-	editor = vim
+  editor = vim
+  excludesfile = /Users/juhwon/.gitignore_global
+  ui = true
+[diff]
+  cimpactionHeuristics = true
+
+[alias]
+  undo = "!f() { \\\n    git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
+
