@@ -50,6 +50,9 @@ set hlsearch " highlight search matches
 " gitgutter
 set updatetime=250
 
+" javascript
+let g:jsx_ext_required = 0
+
 " powerline config
 set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
