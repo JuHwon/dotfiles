@@ -13,6 +13,10 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'airblade/vim-gitgutter'
 
+" JavaScript
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
 Bundle 'Powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of your Plugins must be added before the following line
