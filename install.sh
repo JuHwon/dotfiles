@@ -19,6 +19,9 @@ fi
 source ./fonts/install_fonts.sh
 
 # git
+curl https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight \
+    > /usr/local/bin/diff-highlight \
+    && chmod +x /usr/local/bin/diff-highlight
 ln -sfv "$DOTFILES_DIR/config/.gitconfig" ~
 
 # vimrc
