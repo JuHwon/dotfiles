@@ -9,7 +9,7 @@
   excludesfile = /Users/juhwon/.gitignore_global
   ui = true
 [diff]
-  cimpactionHeuristics = true
+  compactionHeuristic = true
 
 [alias]
   undo = "!f() { \\\n    git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
