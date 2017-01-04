@@ -11,7 +11,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ntpeters/vim-better-whitespace'
+" Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'wincent/command-t'
 
 " JavaScript
 Plugin 'pangloss/vim-javascript'
@@ -36,16 +38,29 @@ filetype plugin indent on    " required
 
 syntax on
 colorscheme peachpuff
+" set background=dark
 set number " show line numbers
 set wildmenu " shows visual autocomplete
 set showmatch " highlights [{()}]
 
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab " tabs are spaces
 
 set incsearch " search while character is entered
 set hlsearch " highlight search matches
+
+" copy to macOS clipboard
+set clipboard=unnamed
+
+" vim-indent-guides config
+" let g:indent_guides_auto_colors = 0
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
+" hi IndentGuidesOdd  ctermbg=black
+" hi IndentGuidesEven ctermbg=darkgrey
+" let g:indent_guides_enable_on_vim_startup=1
 
 " gitgutter
 set updatetime=250
