@@ -27,6 +27,8 @@ ln -sfv "$DOTFILES_DIR/config/.gitconfig" ~
 # vimrc
 ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
 
+# tmux
+ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
