@@ -1,5 +1,6 @@
 zsh
 curl
+wget
 git
 vim
 vim-gui-common
@@ -7,4 +8,7 @@ build-essentials
 telnet
 tree
 htop
+strace
+lsof
+fuser
 
