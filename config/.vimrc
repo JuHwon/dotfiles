@@ -55,6 +55,9 @@ set expandtab " tabs are spaces
 set incsearch " search while character is entered
 set hlsearch " highlight search matches
 
+" autoremove trailing whitespace
+autocmd BufWritePre *.* :%s/\s\+$//e
+
 " copy to macOS clipboard
 set clipboard=unnamed
 
