@@ -14,6 +14,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 " Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
 
 " JavaScript
 Plugin 'pangloss/vim-javascript'
@@ -81,3 +82,5 @@ set term=xterm-256color
 set termencoding=utf-8
 set laststatus=2
 
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
