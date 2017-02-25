@@ -19,6 +19,8 @@ Plugin 'scrooloose/nerdtree'
 " JavaScript
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 Bundle 'Powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -74,6 +76,7 @@ set updatetime=250
 
 " javascript
 let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 " powerline config
 set guifont=Inconsolata\ for\ Powerline:h15
