@@ -21,6 +21,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'fleischie/vim-styled-components'
 
 Bundle 'Powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
