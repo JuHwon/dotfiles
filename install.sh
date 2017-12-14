@@ -11,10 +11,10 @@ function e_error()    { echo -e " \033[1;31m✖\033[0m  $@"; }
 function e_arrow()    { echo -e " \033[1;34m➜\033[0m  $@"; }
 
 if [[ -x 'command -v apt-get' ]]; then
-    source ./init/apt.sh
+    . $DOTFILES_DIR/init/apt.sh
 fi
 
-source ./fonts/install_fonts.sh
+. $DOTFILES_DIR/fonts/install_fonts.sh
 
 # git
 curl https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight \
@@ -38,8 +38,8 @@ echo "[n/N] None"
 while true; do
   read -p "Choose: " answer
   case $answer in
-    [1]* ) ./install/oh-my-zsh.sh; break;;
-    [2]* ) ./install/zim.sh; break;;
+    [1]* ) . "$DOTFILES_DIR/install/oh-my-zsh.sh"; break;;
+    [2]* ) . "$DOTFILES_DIR/install/zim.sh"; break;;
     [Nn]* ) break;;
     * ) echo "Please type in a valid answer.";;
   esac
