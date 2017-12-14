@@ -14,8 +14,6 @@ if [[ -x 'command -v apt-get' ]]; then
     source ./init/apt.sh
 fi
 
-# source ./install/npm.sh
-
 source ./fonts/install_fonts.sh
 
 # git
@@ -31,5 +29,20 @@ ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~
 ln -sfv "$DOTFILES_DIR/tmux/.tmux.ide.conf" ~
 
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+#zsh
+echo "Which zsh config you want to use?"
+echo "[1] Oh My Zsh"
+echo "[2] Zim"
+echo "[n/N] None"
+
+while true; do
+  read -p "Choose: " answer
+  case $answer in
+    [1]* ) ./install/oh-my-zsh.sh; break;;
+    [2]* ) ./install/zim.sh; break;;
+    [Nn]* ) break;;
+    * ) echo "Please type in a valid answer.";;
+  esac
+done
+
 
