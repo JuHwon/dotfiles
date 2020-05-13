@@ -7,11 +7,10 @@
 [core]
   editor = vim
   excludesfile = /Users/juhwon/.gitignore_global
-  ui = true
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
   compactionHeuristic = true
-[core]
-  pager = diff-highlight | less -r
+
 [alias]
   undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
   graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
