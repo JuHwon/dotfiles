@@ -20,3 +20,6 @@ ln -sfv "$DOTFILES_DIR/config/.zshrc" ~
 # tmux
 ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~
 
+# vimrc
+ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
+

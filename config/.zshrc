@@ -21,5 +21,13 @@ zplug load
 eval "$(starship init zsh)"
 
 
+# Alias
+alias -g ls="ls -G"
+alias -g ll="ls -laG"
+
+
+
 export PATH="/usr/local/opt/node@12/bin:$PATH"
+
+
 
