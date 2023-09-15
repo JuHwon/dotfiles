@@ -23,3 +23,6 @@ ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~
 # vimrc
 ln -sfv "$DOTFILES_DIR/config/.vimrc" ~
 
+# vimrc
+ln -sfv "$DOTFILES_DIR/config/starship.toml" ~/.config
+

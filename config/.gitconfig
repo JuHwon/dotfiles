@@ -6,7 +6,7 @@
   ui = true
 [core]
   editor = vim
-  excludesfile = /Users/juhwon/.gitignore_global
+	excludesfile = /Users/juhwon/.gitignore_global
   pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
   compactionHeuristic = true
@@ -17,8 +17,6 @@
 	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 	cleanup = "!f() { git remote prune origin; git branch --list --format \"%(if:equals=[gone])%(upstream:track)%(then)%(refname)%(end)\" | sed 's,^refs/heads/,,;/^$/d' | xargs git branch -D ; }; f"
 
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
